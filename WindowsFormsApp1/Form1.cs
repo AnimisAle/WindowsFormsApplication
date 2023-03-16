@@ -31,5 +31,12 @@ namespace WindowsFormsApp1
         {
             txtResultado.Text = "Olá Lucas send salve man";
         }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            var form = new FrmShow();
+            form.lblMensagem.Text = txtResultado.Text; 
+            form.Show(); 
+        }
     }
 }

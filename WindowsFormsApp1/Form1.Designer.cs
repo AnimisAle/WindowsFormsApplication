@@ -31,6 +31,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.txtResultado = new System.Windows.Forms.TextBox();
             this.btnOk = new System.Windows.Forms.Button();
+            this.btnAbrir = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -47,7 +48,7 @@
             // 
             this.txtResultado.Location = new System.Drawing.Point(42, 66);
             this.txtResultado.Name = "txtResultado";
-            this.txtResultado.Size = new System.Drawing.Size(220, 20);
+            this.txtResultado.Size = new System.Drawing.Size(273, 20);
             this.txtResultado.TabIndex = 1;
             this.txtResultado.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
@@ -61,11 +62,22 @@
             this.btnOk.UseVisualStyleBackColor = true;
             this.btnOk.Click += new System.EventHandler(this.button1_Click);
             // 
+            // btnAbrir
+            // 
+            this.btnAbrir.Location = new System.Drawing.Point(172, 109);
+            this.btnAbrir.Name = "btnAbrir";
+            this.btnAbrir.Size = new System.Drawing.Size(143, 29);
+            this.btnAbrir.TabIndex = 3;
+            this.btnAbrir.Text = "Abrir nova janela";
+            this.btnAbrir.UseVisualStyleBackColor = true;
+            this.btnAbrir.Click += new System.EventHandler(this.button1_Click_1);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btnAbrir);
             this.Controls.Add(this.btnOk);
             this.Controls.Add(this.txtResultado);
             this.Controls.Add(this.label1);
@@ -81,6 +93,7 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox txtResultado;
         private System.Windows.Forms.Button btnOk;
+        private System.Windows.Forms.Button btnAbrir;
     }
 }
 
