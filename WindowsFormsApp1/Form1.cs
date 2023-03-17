@@ -15,6 +15,7 @@ namespace WindowsFormsApp1
         public Form1()
         {
             InitializeComponent();
+            MessageBox.Show("Welcome to the jungle!!!! :)  PELO CONSTRUTOR");
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)
@@ -37,6 +38,11 @@ namespace WindowsFormsApp1
             var form = new FrmShow();
             form.lblMensagem.Text = txtResultado.Text; 
             form.Show(); 
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            MessageBox.Show("Welcome to the jungle!!!! :) ");
         }
     }
 }

@@ -50,6 +50,7 @@
             this.Controls.Add(this.lblMensagem);
             this.Name = "FrmShow";
             this.Text = "FrmShow";
+            this.Load += new System.EventHandler(this.FrmShow_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

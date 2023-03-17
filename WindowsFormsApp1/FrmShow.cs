@@ -21,5 +21,10 @@ namespace WindowsFormsApp1
         {
 
         }
+
+        private void FrmShow_Load(object sender, EventArgs e)
+        {
+            MessageBox.Show("Inicializando pelo FrmShow"); 
+        }
     }
 }
