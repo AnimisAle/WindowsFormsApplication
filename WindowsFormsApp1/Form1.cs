@@ -30,7 +30,7 @@ namespace WindowsFormsApp1
 
         private void button1_Click(object sender, EventArgs e)
         {
-            txtResultado.Text = "Olá Lucas send salve man";
+            txtResultado.Text = "Olá Lucas send salve man  " + cboEstados.Text;
         }
 
         private void button1_Click_1(object sender, EventArgs e)
@@ -42,7 +42,12 @@ namespace WindowsFormsApp1
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            MessageBox.Show("Welcome to the jungle!!!! :) ");
+            //MessageBox.Show("Welcome to the jungle!!!! :) ");
+            List<string> estados = new List<string>();
+            estados.Add("SP");
+            estados.Add("BA");
+            estados.Add("RJ");
+            estados.Add("GO");
         }
     }
 }
